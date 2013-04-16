@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+	<file source-language="en" datatype="plaintext" original="messages" date="2013-04-16T22:26:15Z" product-name="ad_blog">
+		<header/>
+		<body>
+
+			<trans-unit id="title.description">
+				<source>Title</source>
+			</trans-unit>
+			<trans-unit id="content.description">
+				<source>Content</source>
+			</trans-unit>
+			<trans-unit id="categories.description">
+				<source>Categories</source>
+			</trans-unit>
+			<trans-unit id="author.description">
+				<source>Author</source>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>

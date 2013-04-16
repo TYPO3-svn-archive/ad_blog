@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+	<file source-language="en" datatype="plaintext" original="messages" date="2013-04-16T22:26:15Z" product-name="ad_blog">
+		<header/>
+		<body>
+
+			<trans-unit id="tx_adblog_domain_model_article">
+				<source>Blog articles</source>
+			</trans-unit>
+			<trans-unit id="tx_adblog_domain_model_article.title">
+				<source>Title</source>
+			</trans-unit>
+			<trans-unit id="tx_adblog_domain_model_article.content">
+				<source>Content</source>
+			</trans-unit>
+			<trans-unit id="tx_adblog_domain_model_article.categories">
+				<source>Categories</source>
+			</trans-unit>
+			<trans-unit id="tx_adblog_domain_model_article.author">
+				<source>Author</source>
+			</trans-unit>
+			
+			<trans-unit id="tx_adblog_domain_model_category">
+				<source>Blog categories</source>
+			</trans-unit>
+			<trans-unit id="tx_adblog_domain_model_category.name">
+				<source>name</source>
+			</trans-unit>
+			
+			<trans-unit id="tx_adblog_domain_model_author">
+				<source>Authors</source>
+			</trans-unit>
+			
+		</body>
+	</file>
+</xliff>
