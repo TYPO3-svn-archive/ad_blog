@@ -20,7 +20,7 @@ if (TYPO3_MODE === 'BE') {
 		'blog',	// Submodule key
 		'',						// Position
 		array(
-			'Article' => 'list, show',
+			'Article' => 'list, show, create, new',
 			
 		),
 		array(

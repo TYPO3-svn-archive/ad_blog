@@ -32,7 +32,7 @@ namespace AD\AdBlog\Domain\Model;
  * @license http://www.gnu.org/licenses/gpl.html GNU General Public License, version 3 or later
  *
  */
-class Author extends TYPO3\CMS\Extbase\Domain\Model\BackendUser {
+class Author extends \TYPO3\CMS\Extbase\Domain\Model\BackendUser {
 
 }
 ?>
