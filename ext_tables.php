@@ -111,7 +111,6 @@ $TCA['be_users'] = array(
 		'transOrigDiffSourceField' => 'l10n_diffsource',
 		'delete' => 'deleted',
 		'enablecolumns' => array(
-			'disabled' => 'hidden',
 			'starttime' => 'starttime',
 			'endtime' => 'endtime',
 		),
