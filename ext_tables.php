@@ -63,34 +63,4 @@ $TCA['tx_adblog_domain_model_article'] = array(
 	),
 );
 
-$tmp_ad_blog_columns = array(
-
-);
-
-t3lib_extMgm::addTCAcolumns('sys_category',$tmp_ad_blog_columns);
-
-$TCA['sys_category']['columns'][$TCA['sys_category']['ctrl']['type']]['config']['items'][] = array('LLL:EXT:ad_blog/Resources/Private/Language/locallang_db.xlf:sys_category.tx_extbase_type.Tx_AdBlog_Category','Tx_AdBlog_Category');
-
-$TCA['sys_category']['types']['Tx_AdBlog_Category']['showitem'] = $TCA['sys_category']['types']['1']['showitem'];
-$TCA['sys_category']['types']['Tx_AdBlog_Category']['showitem'] .= ',--div--;LLL:EXT:ad_blog/Resources/Private/Language/locallang_db.xlf:tx_adblog_domain_model_category,';
-$TCA['sys_category']['types']['Tx_AdBlog_Category']['showitem'] .= '';
-
-$tmp_ad_blog_columns = array(
-
-);
-
-$tmp_ad_blog_columns['article'] = array(
-	'config' => array(
-		'type' => 'passthrough',
-	)
-);
-
-t3lib_extMgm::addTCAcolumns('be_users',$tmp_ad_blog_columns);
-
-$TCA['be_users']['columns'][$TCA['be_users']['ctrl']['type']]['config']['items'][] = array('LLL:EXT:ad_blog/Resources/Private/Language/locallang_db.xlf:be_users.tx_extbase_type.Tx_AdBlog_Author','Tx_AdBlog_Author');
-
-$TCA['be_users']['types']['Tx_AdBlog_Author']['showitem'] = $TCA['be_users']['types']['1']['showitem'];
-$TCA['be_users']['types']['Tx_AdBlog_Author']['showitem'] .= ',--div--;LLL:EXT:ad_blog/Resources/Private/Language/locallang_db.xlf:tx_adblog_domain_model_author,';
-$TCA['be_users']['types']['Tx_AdBlog_Author']['showitem'] .= '';
-
 ?>

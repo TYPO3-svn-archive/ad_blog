@@ -42,31 +42,11 @@ CREATE TABLE tx_adblog_domain_model_article (
 );
 
 #
-# Table structure for table 'sys_category'
-#
-CREATE TABLE sys_category (
-
-	tx_extbase_type varchar(255) DEFAULT '' NOT NULL,
-
-);
-
-#
 # Table structure for table 'be_users'
 #
 CREATE TABLE be_users (
 
 	article int(11) unsigned DEFAULT '0' NOT NULL,
-
-	tx_extbase_type varchar(255) DEFAULT '' NOT NULL,
-
-);
-
-#
-# Table structure for table 'be_users'
-#
-CREATE TABLE be_users (
-
-	article  int(11) unsigned DEFAULT '0' NOT NULL,
 
 );
 
