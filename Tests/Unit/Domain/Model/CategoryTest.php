@@ -50,22 +50,12 @@ class CategoryTest extends \TYPO3\CMS\Extbase\Tests\Unit\BaseTestCase {
 	public function tearDown() {
 		unset($this->fixture);
 	}
-
+	
 	/**
 	 * @test
 	 */
-	public function getNameReturnsInitialValueForString() { }
-
-	/**
-	 * @test
-	 */
-	public function setNameForStringSetsName() { 
-		$this->fixture->setName('Conceived at T3CON10');
-
-		$this->assertSame(
-			'Conceived at T3CON10',
-			$this->fixture->getName()
-		);
+	public function dummyTestToNotLeaveThisFileEmpty() {
+		$this->markTestIncomplete();
 	}
 	
 }

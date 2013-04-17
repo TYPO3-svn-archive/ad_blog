@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <xliff version="1.0">
-	<file source-language="en" datatype="plaintext" original="messages" date="2013-04-16T22:53:24Z" product-name="ad_blog">
+	<file source-language="en" datatype="plaintext" original="messages" date="2013-04-17T21:16:04Z" product-name="ad_blog">
 		<header/>
 		<body>
 
@@ -22,9 +22,6 @@
 			
 			<trans-unit id="tx_adblog_domain_model_category">
 				<source>Blog category</source>
-			</trans-unit>
-			<trans-unit id="tx_adblog_domain_model_category.name">
-				<source>name</source>
 			</trans-unit>
 			
 			<trans-unit id="tx_adblog_domain_model_author">

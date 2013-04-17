@@ -32,33 +32,7 @@ namespace AD\AdBlog\Domain\Model;
  * @license http://www.gnu.org/licenses/gpl.html GNU General Public License, version 3 or later
  *
  */
-class Category extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity {
-
-	/**
-	 * name
-	 *
-	 * @var \string
-	 */
-	protected $name;
-
-	/**
-	 * Returns the name
-	 *
-	 * @return \string $name
-	 */
-	public function getName() {
-		return $this->name;
-	}
-
-	/**
-	 * Sets the name
-	 *
-	 * @param \string $name
-	 * @return void
-	 */
-	public function setName($name) {
-		$this->name = $name;
-	}
+class Category extends TYPO3\CMS\Extbase\Domain\Model\Category {
 
 }
 ?>

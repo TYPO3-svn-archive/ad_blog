@@ -62,5 +62,28 @@ class ArticleController extends \TYPO3\CMS\Extbase\Mvc\Controller\ActionControll
 		$this->view->assign('article', $article);
 	}
 
+	/**
+	 * action new
+	 *
+	 * @param \AD\AdBlog\Domain\Model\Article $newArticle
+	 * @dontvalidate $newArticle
+	 * @return void
+	 */
+	public function newAction(\AD\AdBlog\Domain\Model\Article $newArticle = NULL) {
+		$this->view->assign('newArticle', $newArticle);
+	}
+
+	/**
+	 * action create
+	 *
+	 * @param \AD\AdBlog\Domain\Model\Article $newArticle
+	 * @return void
+	 */
+	public function createAction(\AD\AdBlog\Domain\Model\Article $newArticle) {
+		$this->articleRepository->add($newArticle);
+		$this->flashMessageContainer->add('Your new Article was created.');
+		$this->redirect('list');
+	}
+
 }
 ?>

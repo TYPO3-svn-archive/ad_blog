@@ -18,14 +18,12 @@ Otherwise your changes will be overwritten the next time you save the extension 
 
 <table  class="tx_adblog" >
 	<tr>
-		<th><f:translate key="tx_adblog_domain_model_category.name" /></th>
 		<th> </th>
 		<th> </th>
 	</tr>
 
 	<f:for each="{categories}" as="category">
 		<tr>
-			<td><f:link.action action="show" arguments="{category : category}"> {category.name}</f:link.action></td>
 			<td><f:link.action action="edit" arguments="{category : category}">Edit</f:link.action></td>
 			<td><f:link.action action="delete" arguments="{category : category}">Delete</f:link.action></td>
 		</tr>

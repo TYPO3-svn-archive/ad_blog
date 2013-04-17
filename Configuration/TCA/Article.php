@@ -117,7 +117,7 @@ $TCA['tx_adblog_domain_model_article'] = array(
 			'label' => 'LLL:EXT:ad_blog/Resources/Private/Language/locallang_db.xlf:tx_adblog_domain_model_article.categories',
 			'config' => array(
 				'type' => 'select',
-				'foreign_table' => 'tx_adblog_domain_model_category',
+				'foreign_table' => 'sys_category',
 				'MM' => 'tx_adblog_article_category_mm',
 				'size' => 10,
 				'autoSizeMax' => 30,
@@ -139,7 +139,7 @@ $TCA['tx_adblog_domain_model_article'] = array(
 						'title' => 'Create new',
 						'icon' => 'add.gif',
 						'params' => array(
-							'table' => 'tx_adblog_domain_model_category',
+							'table' => 'sys_category',
 							'pid' => '###CURRENT_PID###',
 							'setValue' => 'prepend'
 							),

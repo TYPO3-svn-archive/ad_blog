@@ -2,6 +2,25 @@ config.tx_extbase{
     persistence{
         classes{
 
+            TYPO3\CMS\Extbase\Domain\Model\Category {
+                subclasses {
+                    Tx_AdBlog_Category = AD\AdBlog\Domain\Model\Category
+					
+          		}
+            }
+            TYPO3\CMS\Extbase\Domain\Model\BackendUser {
+                subclasses {
+                    Tx_AdBlog_Author = AD\AdBlog\Domain\Model\Author
+					
+          		}
+            }
+            AD\AdBlog\Domain\Model\Category {
+                mapping {
+                    tableName = sys_category
+                    recordType = Tx_AdBlog_Category
+                }
+            }
+            
             AD\AdBlog\Domain\Model\Author {
                 mapping {
                     tableName = be_users
