@@ -10,7 +10,8 @@ config.tx_extbase{
             }
             TYPO3\CMS\Extbase\Domain\Model\BackendUser {
                 subclasses {
-                    Tx_AdBlog_Author = AD\AdBlog\Domain\Model\Author
+# TODO: commented the following line because of strange error in backend while accessing page and list module
+#                    Tx_AdBlog_Author = AD\AdBlog\Domain\Model\Author
 					
           		}
             }
