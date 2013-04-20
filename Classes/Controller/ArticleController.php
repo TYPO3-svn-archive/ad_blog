@@ -43,6 +43,14 @@ class ArticleController extends \TYPO3\CMS\Extbase\Mvc\Controller\ActionControll
 	protected $articleRepository;
 
 	/**
+	 * categoryRepository
+	 *
+	 * @var \AD\AdBlog\Domain\Repository\CategoryRepository
+	 * @inject
+	 */
+	protected $categoryRepository;
+
+	/**
 	 * action list
 	 *
 	 * @return void
@@ -70,6 +78,7 @@ class ArticleController extends \TYPO3\CMS\Extbase\Mvc\Controller\ActionControll
 	 * @return void
 	 */
 	public function newAction(\AD\AdBlog\Domain\Model\Article $newArticle = NULL) {
+		$this->view->assign('categoryArray', $this->categoryRepository->findAll());
 		$this->view->assign('newArticle', $newArticle);
 	}
 

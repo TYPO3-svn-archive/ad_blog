@@ -6,3 +6,7 @@
 	<f:translate key="tx_adblog_domain_model_article.content" />
 </label><br />
 	<f:form.textarea property="content" cols="40" rows="15" /><br />
+<label for="categories">
+	<f:translate key="tx_adblog_domain_model_article.categories" />
+</label><br />
+	<f:form.select property="categories" options="{categoryArray}" optionLabelField="title" multiple="true"/><br />
